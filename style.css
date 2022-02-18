@@ -1,0 +1,73 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(gray, rgb(36, 33, 33));
+    padding-top: 30px;
+}
+
+.publication {
+    width: 60%;
+    padding: 20px 30px;
+    font-family: sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(rgb(77, 105, 199), rgb(96, 143, 182));
+    border-radius: 5px;
+    color: white;
+    opacity: 0;
+    animation: aparecer 1s forwards 0.7s;
+}
+
+.publication p {
+    line-height: 25px;
+}
+
+.comments {
+    margin-top: 25px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+}
+
+.comment {
+    flex-grow: 3;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+.submit {
+    flex-grow: 1;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.nohaymaspublis {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+    padding: 12px 30px;
+    font-family: sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
